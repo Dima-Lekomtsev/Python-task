@@ -1,5 +1,6 @@
-a = input()
-s = -1
-for i in range(10):
-    s = s+1
-    print(s, a)
+a = int(input())
+s = int(input())
+d =  s // a
+f = s - d * a
+print(d)
+print(f)
