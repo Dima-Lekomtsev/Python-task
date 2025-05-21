@@ -9,8 +9,8 @@ def declension(n):
         return 'попыток'
 
 def saferesult(f, d):
-    with open('result.txt', 'w', encoding='utf-8') as file:
-        file.write(f"{f}: {d} {declension(d)}")
+    with open('result.txt', 'a', encoding='utf-8') as file:
+        file.write(f"\n{f}: {d} {declension(d)}")
 
 print('Я загадал число от 0 до 100 сможешь ли ты его угадать?')
 
